@@ -16,7 +16,8 @@ function submitServerInfo(evt) {
 
   if (serverName !== '') {
     serverId++;
-    allServers['server' + serverId] = { serverName };
+
+    console.log((allServers['server' + serverId] = { serverName }));
 
     updateServerTable();
 
